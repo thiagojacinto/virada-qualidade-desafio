@@ -1,5 +1,5 @@
 #language: en
-@API
+@API @register
 Feature: [API] Register a new User
 
   @happy
@@ -24,7 +24,7 @@ Feature: [API] Register a new User
       | email         |
       | password      |
     
-  @failure @contract
+  @failure @invalid-password
   Scenario: Smaller passwords fails to register a new User
     
     Given a valid user story data
@@ -33,7 +33,7 @@ Feature: [API] Register a new User
     Then status should be 400
     And error message should include "password"
 
-  @failure @contract
+  @failure @already-registered
   Scenario: Already registered email fails to register a new User
     
     Given an already registered User
