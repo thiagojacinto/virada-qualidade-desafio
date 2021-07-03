@@ -6,7 +6,9 @@
   "scripts": {
     "lint": "eslint -c cypress/.eslintrc.json",
     "test": "npx cypress run",
-    "cypress": "npx cypress open"
+    "cypress": "npx cypress open",
+    "test:ui": "./node_modules/.bin/cypress-tags run -e TAGS='@UI'",
+    "test:api": "./node_modules/.bin/cypress-tags run -e TAGS='@API'"
   },
   "repository": {
     "type": "git",
