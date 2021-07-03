@@ -1,0 +1,27 @@
+{
+  "name": "virada-qualidade-desafio",
+  "version": "1.0.0",
+  "description": "12h to develop automated tests and have fun with it",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thiagojacinto/virada-qualidade-desafio.git"
+  },
+  "keywords": [
+    "automated-tests",
+    "testing-api",
+    "testing-ui"
+  ],
+  "author": "Thiago Jacinto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thiagojacinto/virada-qualidade-desafio/issues"
+  },
+  "homepage": "https://github.com/thiagojacinto/virada-qualidade-desafio#readme",
+  "dependencies": {
+    "cypress": "^7.6.0"
+  }
+}
