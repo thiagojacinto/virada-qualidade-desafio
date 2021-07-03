@@ -1,6 +1,6 @@
 {
   "name": "virada-qualidade-desafio",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "12h to develop automated tests and have fun with it",
   "main": "index.js",
   "scripts": {
