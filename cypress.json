@@ -1,1 +1,5 @@
-{}
+{
+  "baseUrl": "https://conexaoqa.herokuapp.com/",
+  "video": false,
+  "testFiles": "**/*.feature"
+}
