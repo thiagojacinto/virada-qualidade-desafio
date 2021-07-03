@@ -26,10 +26,6 @@ When('submit the form', () => {
   cadastroPage.enviarCadastro();
 })
 
-Then('should be redirect to {string} page', (route) => {
-  cy.url().should('include', route);
-})
-
 // happy :: Register page to have a Login link
 Then('should be visible a Login link', () => {
   cadastroPage.verificarExistencia('register-login');
@@ -73,10 +69,6 @@ When('fulfill without password2', () => {
   })
 })
 
-Then('validation warning should be visible', () => {
-  cy.get('.MuiFormHelperText-root').should('be.visible');
-})
-
 // failure :: Attempts to register an already registered email
 When('fulfill the form fields with registered email', () => {
   cy.fixture('historia').then(historia => {
@@ -86,10 +78,6 @@ When('fulfill the form fields with registered email', () => {
     cadastroPage.preencher('register-password', historia.password);
     cadastroPage.preencher('register-password2', historia.password);
   })
-})
-
-Then('an alert should appear with {string}', () => {
-  cadastroPage.verificarExistencia("alert");
 })
 
 // failure :: Attempts to register with small password
