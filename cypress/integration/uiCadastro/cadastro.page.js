@@ -13,6 +13,19 @@ class Cadastro {
       .type(valor);
   }
 
+  completarCadastro() {
+    cy.fixture('historia').then(historia => {
+      historia.email = chance.email({ domain: "ui-virada.qa" });
+
+      this.preencher('register-name', historia.name);
+      this.preencher('register-email', historia.email);
+      this.preencher('register-password', historia.password);
+      this.preencher('register-password2', historia.password);
+
+      this.enviarCadastro();
+    })
+  }
+
   enviarCadastro() {
     cy.get('[data-test=register-submit]').click();
   }
