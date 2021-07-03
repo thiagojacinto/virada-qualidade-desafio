@@ -39,7 +39,7 @@ Feature: [UI] Register a new User
     And submit the form
     Then an alert should appear with "Usuário já registrado"
 
-  @failure @small-password @focus
+  @failure @small-password
   Scenario: Attempts to register with small password
 
     Given access "cadastrar"
