@@ -1,0 +1,15 @@
+{
+  "company": "string",
+  "status": "processing",
+  "location": "string",
+  "website": "https://github.com/thiagojacinto",
+  "skills": "develop",
+  "bio": "problem solver",
+  "githubusername": "thiagojacinto",
+  "youtube": "string",
+  "twitter": "string",
+  "facebook": "string",
+  "linkedin": "thiago-jacinto",
+  "instagram": "string",
+  "medium": "string"
+}

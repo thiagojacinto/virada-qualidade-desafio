@@ -1,9 +1,10 @@
 {
   "name": "virada-qualidade-desafio",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "12h to develop automated tests and have fun with it",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint -c cypress/.eslintrc.json",
     "test": "npx cypress run",
     "cypress": "npx cypress open"
   },
@@ -26,6 +27,7 @@
     "cypress": "^7.6.0"
   },
   "devDependencies": {
+    "ajv": "^8.6.0",
     "chance": "^1.1.7",
     "cypress-cucumber-preprocessor": "^4.1.3",
     "eslint-plugin-chai-friendly": "^0.7.1",
