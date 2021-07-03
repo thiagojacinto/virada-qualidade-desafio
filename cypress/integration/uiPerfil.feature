@@ -13,13 +13,13 @@ Feature: [UI] User Profile
       Then should be redirect to "dashboard" page
 
     @failure @contract
-    Scenario: Attempt to creaet a profile without required fields
+    Scenario: Attempt to create a profile without required fields
 
       When submit the form
       Then validation warning should be visible
 
     @failure @format-url-field
-    Scenario: Attempt to creaet a profile with invalid URL field
+    Scenario: Attempt to create a profile with invalid URL field
 
       Given fulfill the form indicating an invalid URL
       When submit the form
