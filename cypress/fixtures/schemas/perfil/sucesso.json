@@ -1,0 +1,177 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "type": "object",
+    "required": [
+        "_id",
+        "company",
+        "location",
+        "status",
+        "website",
+        "skills",
+        "bio",
+        "date"
+    ],
+    "properties": {
+        "_id": {
+            "type": "string"
+        },
+        "company": {
+            "type": "string"
+        },
+        "location": {
+            "type": "string"
+        },
+        "status": {
+            "type": "string"
+        },
+        "website": {
+            "type": "string"
+        },
+        "skills": {
+            "type": "array",
+            "items": {
+                "anyOf": [
+                    {
+                        "type": "string"
+                    }
+                ]
+            }
+        },
+        "bio": {
+            "type": "string"
+        },
+        "githubusername": {
+            "type": "string"
+        },
+        "experience": {
+            "type": "array",
+            "items": {
+                "anyOf": [
+                    {
+                        "type": "object",
+                        "required": [
+                            "_id",
+                            "title",
+                            "company",
+                            "location",
+                            "from",
+                            "to",
+                            "current",
+                            "description"
+                        ],
+                        "properties": {
+                            "_id": {
+                                "type": "string"
+                            },
+                            "title": {
+                                "type": "string"
+                            },
+                            "company": {
+                                "type": "string"
+                            },
+                            "location": {
+                                "type": "string"
+                            },
+                            "from": {
+                                "type": "string"
+                            },
+                            "to": {
+                                "type": "string"
+                            },
+                            "current": {
+                                "type": "boolean"
+                            },
+                            "description": {
+                                "type": "string"
+                            }
+                        },
+                        "additionalProperties": true
+                    }
+                ]
+            }
+        },
+        "education": {
+            "type": "array",
+            "items": {
+                "anyOf": [
+                    {
+                        "type": "object",
+                        "required": [
+                            "_id",
+                            "school",
+                            "degree",
+                            "fieldofstudy",
+                            "from",
+                            "to",
+                            "current",
+                            "description"
+                        ],
+                        "properties": {
+                            "_id": {
+                                "type": "string"
+                            },
+                            "school": {
+                                "type": "string"
+                            },
+                            "degree": {
+                                "type": "string"
+                            },
+                            "fieldofstudy": {
+                                "type": "string"
+                            },
+                            "from": {
+                                "type": "string"
+                            },
+                            "to": {
+                                "type": "string"
+                            },
+                            "current": {
+                                "type": "boolean"
+                            },
+                            "description": {
+                                "type": "string"
+                            }
+                        },
+                        "additionalProperties": true
+                    }
+                ]
+            }
+        },
+        "social": {
+            "type": "object",
+            "required": [
+                "youtube",
+                "twitter",
+                "facebook",
+                "linkedin",
+                "instagram",
+                "medium"
+            ],
+            "properties": {
+                "youtube": {
+                    "type": "string"
+                },
+                "twitter": {
+                    "type": "string"
+                },
+                "facebook": {
+                    "type": "string"
+                },
+                "linkedin": {
+                    "type": "string"
+                },
+                "instagram": {
+                    "type": "string"
+                },
+                "medium": {
+                    "type": "string"
+                }
+            },
+            "additionalProperties": true
+        },
+        "date": {
+            "type": "string"
+        }
+    },
+    "additionalProperties": true
+}
