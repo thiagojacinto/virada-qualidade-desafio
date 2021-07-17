@@ -1,5 +1,11 @@
 {
+  "$schema": "https://on.cypress.io/cypress.schema.json",
   "baseUrl": "https://conexaoqa.herokuapp.com/",
   "video": false,
-  "testFiles": "**/*.feature"
+  "testFiles": "**/*.feature",
+  "reporter": "cypress-mochawesome-reporter",
+  "reporterOptions": {
+    "charts": true,
+    "embeddedScreenshots": true
+  }
 }
